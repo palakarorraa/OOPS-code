@@ -8,20 +8,19 @@ int main() {
 
     temp = num;
 
-    // Count digits
     while(temp > 0) {
         temp /= 10;
         n++;
     }
 
     temp = num;
-    // Calculate sum of digits^n without pow()
+    
     while(temp > 0) {
         digit = temp % 10;
 
         int power = 1;
         for(int i = 0; i < n; i++) {
-            power *= digit;   // digit^n
+            power *= digit;   
         }
 
         sum += power;
@@ -35,4 +34,5 @@ int main() {
 
     return 0;
 }
+
 
