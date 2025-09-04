@@ -9,7 +9,7 @@ int main() {
     temp = num;
     while(temp > 0) {
         digit = temp % 10;
-        rev = rev * 10 + digit; // reverse bna rhe h
+        rev = rev * 10 + digit;
         temp /= 10;
     }
 
@@ -20,3 +20,4 @@ int main() {
 
     return 0;
 }
+
